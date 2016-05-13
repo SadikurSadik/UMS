@@ -1,0 +1,269 @@
+a:focus{
+    outline: none;
+}
+.jumbotron h2{
+  text-align: center;
+  color: blue;
+  font-family: Georgia;
+}
+
+.panel{
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.hidden {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+}
+
+/* SIGNIN PAGE */
+
+.user_form{}
+.user_form .form-group:after,
+.user_form .form-group:before{
+    display: table;
+    clear: both;
+    content: '';
+}
+.user_form input.form-control{
+    width: 75%;
+    float: left;
+    border-radius: 4px 0px 0px 4px;
+    height: 40px;
+}
+.user_form .btn-label{
+    width: 25%;
+    float: right;
+    background: #F8F5F0;
+    color: #98978b;
+    border-radius: 0px 4px 4px 0px;
+    border: 1px solid #dfd7ca;
+    border-left: 0px;
+    height: 40px;
+    padding-top: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 11px;
+    line-height: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.user_form .btn-label:hover{
+    cursor: default;
+}
+
+.user_form .btn-success{
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
+}
+
+.user_form .btn-submit:focus{
+    outline: none;
+}
+
+.panel-default .panel-heading, .panel-default .panel-title, .panel-default .panel-footer {
+    color: #54544A;
+}
+
+.panel .panel-heading, .panel .panel-title {
+    font-size: 14px;
+}
+
+.panel-heading {
+    padding: 16px 19px;
+}
+
+.loginms{
+    text-align: right;
+}
+
+.has-error .btn-label{
+    color: #d9534f;
+    border-color: #d9534f;
+}
+
+.has-success .btn-label{
+    color: #93c54b;
+    border-color: #93c54b;
+}
+
+.all_links_table{
+    margin-top: 50px;
+}
+
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+        border-top: 0px solid #dfd7ca;
+        border-bottom: 1px solid #dfd7ca;
+}
+
+.table {
+    table-layout: fixed;
+}
+
+.tr_animate{
+    animation: rowBg 1s linear;
+}
+
+@keyframes rowBg {
+    from {
+        background: #E0DED9;
+    }
+    to{
+        background: #fff;
+    }
+}
+
+.all_links_table .panel-body{
+    padding: 0px;
+}
+.mt_19{
+    margin-top: 19px;
+}
+.all_links_table td {
+    font-size: 13px;
+}
+
+.table{
+    margin-bottom: 0px;
+}
+
+.mt_10{
+    margin-top: 10px;
+}
+
+textarea, textarea.form-control, input.form-control, input[type=text], input[type=password], input[type=email], input[type=number], [type=text].form-control, [type=password].form-control, [type=email].form-control, [type=tel].form-control, [contenteditable].form-control{
+        border-radius: 0;
+     -webkit-appearance: none;
+     -webkit-box-shadow: inset 0 0px 0 #ddd;
+     box-shadow: inset 0 0px 0 #ddd;
+    border: 2px solid #5BBC2E;
+    padding-left: 5px;
+}
+
+.has-error input:not([type=checkbox]), .has-error .form-control, .has-error input.form-control[readonly], .has-error input[type=text][readonly], .has-error [type=text].form-control[readonly], .has-error input:not([type=checkbox]):focus, .has-error .form-control:focus {
+        border-radius: 5px 0px 0px 5px;
+     -webkit-appearance: none;
+     -webkit-box-shadow: inset 0 0px 0 #ddd;
+     box-shadow: inset 0 0px 0 #ddd;
+    border: 2px solid #e51c23;
+}
+
+textarea:focus, textarea.form-control:focus, input.form-control:focus, input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=number]:focus, [type=text].form-control:focus, [type=password].form-control:focus, [type=email].form-control:focus, [type=tel].form-control:focus, [contenteditable].form-control:focus {
+     -webkit-box-shadow: inset 0 0px 0 #5BBC2E;
+     box-shadow: inset 0 0px 0 #5BBC2E;
+}
+
+.form-control:focus {
+    border-color: #5BBC2E;
+}
+
+.user_form .btn-label {
+    width: 25%;
+    float: right;
+    background: #fff;
+    color: #4caf50;
+    border-radius: 0px 4px 4px 0px;
+    border: 2px solid #4caf50;
+    border-left: 0px;
+    height: 40px;
+    padding-top: 9px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 11px;
+    line-height: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.has-success .btn-label {
+    border-color: #4caf50;
+    border-width: 2px;
+    padding-top: 9px;
+    background: #4caf50;
+    color: #fff;
+}
+
+.has-error .btn-label {
+    color: #fff;
+    border-color: #e51c23;
+    border-width: 2px;
+    padding-top: 9px;
+    background: #e51c23;
+}
+
+.jumbotron{
+    padding: 40px 0px 60px 0;
+    background: #CECEF6;
+    margin-top: 60px;
+}
+
+.back_home{
+    margin: 50px 0px 0px 11px;
+    display: inline-block;
+}
+
+.remove_link{
+    background-color: #fff;
+    color: #de0f17;
+    border: none;
+    text-align: center;
+}
+
+.please_login{
+    margin-bottom: 30px;
+}
+
+.statistics_panel .panel-body {
+    padding: 45px 15px 15px;
+}
+
+.copyright {
+    padding: 10px;
+}
+
+.copyright p{
+    margin-bottom: 0px;
+}
+
+.user_form .panel-body{
+    padding: 40px 15px
+}
+
+.remove_link:focus{
+    outline: none;
+}
+.help-block{
+  color: red;
+  display: inline-block;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+/* Navigation */
+.navbar{
+    background: #242424;
+    font-family: 'Lato', sans-serif;
+}
+.navbar a{
+    color: #cccccc !important;
+    text-align: center;
+}
+.navbar a:hover{
+    color: #ffffff !important;
+    background: #646464 !important;
+}
+.navbar-header .navbar-brand{
+    color: white !important;
+    font-size: 1.5em;
+}
+.navbar-default .nav li.active a{
+    color: #1d1d1d !important;
+}

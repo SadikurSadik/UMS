@@ -18,19 +18,16 @@
           <form method="POST" action="{{ Route('postlogin') }}" accept-charset="UTF-8" id="login">
             <input name="_token" type="hidden" value="{{ Session::token() }}">
 
-            <div class="form-group form-email ">
+            <div class="form-group {{ $errors->has('email') ?  'has-error' : ''}}">
               <label for="email" class="btn-label">Email</label>
               <input class="form-control" name="email" type="email" id="email" value="{{ Request::old('email') }}">
-              <span class="help-block"></span>
-                @if($errors->has('email')) <label class="error-label">{{ $errors->first('email') }}</label> @endif
+              @if($errors->has('email')) <label class="help-block">{{ $errors->first('email') }}</label> @endif
             </div>
 
-            <div class="form-group form-password ">
+            <div class="form-group {{ $errors->has('password') ?  'has-error' : ''}}">
               <label for="password" class="btn-label">Password</label>
               <input class="form-control" name="password" type="password" value="" id="password">
-              <span class="help-block">
-
-              </span>
+              @if($errors->has('password')) <label class="help-block">{{ $errors->first('password') }}</label> @endif
             </div>
 
             <div class="form-group">

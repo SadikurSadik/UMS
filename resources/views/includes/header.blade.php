@@ -14,6 +14,13 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-left">
                     <li class="{{ Route::currentRouteName()=='home' ? 'active' : '' }}"><a href="{{ Route('home') }}">Home</a></li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Department <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li class="{{ Route::currentRouteName()=='showepartments' ? 'active' : '' }}"><a href="{{ Route('showepartments') }}">Show All</a></li>
+                        <li class="{{ Route::currentRouteName()=='getDepartment' ? 'active' : '' }}"><a href="{{ Route('getDepartment') }}">Add New</a></li>
+                      </ul>
+                    </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     @if(Auth::guest())

@@ -16,4 +16,16 @@ Route::group(['middleware' => ['web']], function () {
        'uses'=>'UserController@getLogout',
        'as'=>'logout'
   ]);
+  Route::get('/savedepartment',[
+       'uses'=>'DepartmentController@getDepartment',
+       'as'=>'getDepartment'
+  ]);
+  Route::post('/postsavedepartment',[
+    'uses'=>'DepartmentController@postSaveDepartment',
+    'as'=>'postdepartment',
+  ]);
+  Route::get('/showepartments',[
+       'uses'=>'DepartmentController@getshowDepartment',
+       'as'=>'showepartments'
+  ]);
 });

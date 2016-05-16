@@ -27,30 +27,12 @@ a:focus{
     content: '';
 }
 .user_form input.form-control{
-    width: 75%;
+    width: 70%;
     float: left;
     border-radius: 4px 0px 0px 4px;
     height: 40px;
 }
-.user_form .btn-label{
-    width: 25%;
-    float: right;
-    background: #F8F5F0;
-    color: #98978b;
-    border-radius: 0px 4px 4px 0px;
-    border: 1px solid #dfd7ca;
-    border-left: 0px;
-    height: 40px;
-    padding-top: 10px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    text-align: center;
-    font-size: 11px;
-    line-height: 22px;
-    font-weight: 500;
-    text-transform: uppercase;
-}
+
 
 .user_form .btn-label:hover{
     cursor: default;
@@ -71,7 +53,8 @@ a:focus{
 }
 
 .panel .panel-heading, .panel .panel-title {
-    font-size: 14px;
+    font-size: 13px;
+    font-weight: bold;
 }
 
 .panel-heading {
@@ -96,60 +79,33 @@ a:focus{
     margin-top: 50px;
 }
 
-.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
-        border-top: 0px solid #dfd7ca;
-        border-bottom: 1px solid #dfd7ca;
-}
-
-.table {
-    table-layout: fixed;
-}
-
-.tr_animate{
-    animation: rowBg 1s linear;
-}
-
-@keyframes rowBg {
-    from {
-        background: #E0DED9;
-    }
-    to{
-        background: #fff;
-    }
-}
-
-.all_links_table .panel-body{
-    padding: 0px;
-}
-.mt_19{
-    margin-top: 19px;
-}
-.all_links_table td {
-    font-size: 13px;
+h3{
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-family: Georgia;
 }
 
 .table{
-    margin-bottom: 0px;
+  font-size: 14px;
+  font-family: Georgia;
 }
-
-.mt_10{
-    margin-top: 10px;
+.table td,th{
+  text-align: center;
 }
-
 textarea, textarea.form-control, input.form-control, input[type=text], input[type=password], input[type=email], input[type=number], [type=text].form-control, [type=password].form-control, [type=email].form-control, [type=tel].form-control, [contenteditable].form-control{
-        border-radius: 0;
-     -webkit-appearance: none;
-     -webkit-box-shadow: inset 0 0px 0 #ddd;
-     box-shadow: inset 0 0px 0 #ddd;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -webkit-box-shadow: inset 0 0px 0 #ddd;
+    box-shadow: inset 0 0px 0 #ddd;
     border: 2px solid #5BBC2E;
     padding-left: 5px;
 }
 
 .has-error input:not([type=checkbox]), .has-error .form-control, .has-error input.form-control[readonly], .has-error input[type=text][readonly], .has-error [type=text].form-control[readonly], .has-error input:not([type=checkbox]):focus, .has-error .form-control:focus {
-        border-radius: 5px 0px 0px 5px;
-     -webkit-appearance: none;
-     -webkit-box-shadow: inset 0 0px 0 #ddd;
-     box-shadow: inset 0 0px 0 #ddd;
+    border-radius: 5px 0px 0px 5px;
+    -webkit-appearance: none;
+    -webkit-box-shadow: inset 0 0px 0 #ddd;
+    box-shadow: inset 0 0px 0 #ddd;
     border: 2px solid #e51c23;
 }
 
@@ -163,7 +119,7 @@ textarea:focus, textarea.form-control:focus, input.form-control:focus, input[typ
 }
 
 .user_form .btn-label {
-    width: 25%;
+    width: 30%;
     float: right;
     background: #fff;
     color: #4caf50;
@@ -176,10 +132,9 @@ textarea:focus, textarea.form-control:focus, input.form-control:focus, input[typ
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     text-align: center;
-    font-size: 11px;
+    font-size: 12px;
     line-height: 22px;
-    font-weight: 500;
-    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .has-success .btn-label {
@@ -197,7 +152,9 @@ textarea:focus, textarea.form-control:focus, input.form-control:focus, input[typ
     padding-top: 9px;
     background: #e51c23;
 }
-
+.btn.btn-primary{
+  padding: 7px 20px;
+}
 .jumbotron{
     padding: 40px 0px 60px 0;
     background: #CECEF6;
@@ -242,9 +199,9 @@ textarea:focus, textarea.form-control:focus, input.form-control:focus, input[typ
 .help-block{
   color: red;
   display: inline-block;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 /* Navigation */
@@ -266,4 +223,31 @@ textarea:focus, textarea.form-control:focus, input.form-control:focus, input[typ
 }
 .navbar-default .nav li.active a{
     color: #1d1d1d !important;
+}
+.active a{
+  background: #E7E7E7 !important;
+  color: #1d1d1d !important;
+}
+.dropdown-menu{
+  background: #242424;
+  font-family: 'Lato', sans-serif;
+}
+.dropdown-menu li a{
+  padding: 8px 0;
+}
+
+
+.pagination{
+  font-size: 20px;
+  margin-left: 48%;
+}
+
+.pagination a{
+  color: black;
+  text-decoration: none;
+}
+
+.pagination a:hover,
+.pagination a:active{
+  color: #ccc;
 }
